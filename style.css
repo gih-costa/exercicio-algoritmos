@@ -1,0 +1,15 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pass, .back {
+  background-color: rgb(233, 250, 255);
+  border: 1px solid rgb(4, 95, 128);
+  color:rgb(4, 95, 128);
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 5px;
+}

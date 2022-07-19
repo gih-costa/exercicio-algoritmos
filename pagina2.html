@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Exercícios - Algoritmos 2</title>
+</head>
+
+<body>
+  <h1>Exercício 6</h1>
+  <p> O restaurante a quilo Bem-Bão cobra R$12,00 por cada quilo de refeição. Escreva um algoritmo
+    que leia o peso do prato montado pelo cliente (em quilos) e imprima o valor a pagar. Assuma que a
+    balança já desconte o peso do prato. </p>
+
+  <div class="questao6">
+    <label for="peso">Qual o peso do seu prato? (em Kg)</label><br>
+    <input type="number" id="peso"> <br><br>
+
+    <button onclick="q6()">Calcular valor a pagar</button>
+    <h3 id="resposta-questao6"></h3>
+  </div>
+
+  <h1>Exercício 7</h1>
+  <p>Entrar com o dia e o mês de uma data e informar quantos dias se passaram desde o início do
+    ano. Esqueça a questão dos anos bissextos e considere sempre que um mês possui 30 dias. </p>
+
+  <div class="questao7">
+    <label for="dias">Digite o dia</label>
+    <input type="number" id="dias"> <br><br>
+    <label for="mes">Digite o número do mês</label>
+    <input type="number" id="mes"> <br><br>
+    <button onclick="q7()">Calcular</button>
+    <h3 id="resposta-questao7"></h3>
+  </div>
+
+  <h1>Exercício 8</h1>
+  <p> Faça um algoritmo para ler três notas de um aluno em uma disciplina e imprimir a sua média
+    ponderada (as notas tem pesos respectivos de 1, 2 e 3). </p>
+  <div class="questao8">
+    <label for="nota1">Nota 1</label>
+    <input type="number" id="nota1"> <br><br>
+    <label for="nota2">Nota 2</label>
+    <input type="number" id="nota2"> <br><br>
+    <label for="nota3">Nota 3</label>
+    <input type="number" id="nota3"> <br><br>
+    <button onclick="q8()">Calcular média</button>
+    <h3 id="resposta-questao8"></h3>
+  </div>
+
+  <h1>Exercício 9</h1>
+  <p> Uma fábrica de camisetas produz os tamanhos pequeno, médio e grande, cada uma sendo
+    vendida respectivamente por 10, 12 e 15 reais. Construa um algoritmo em que o usuário forneça a
+    quantidade de camisetas pequenas, médias e grandes referentes a uma venda, e a máquina
+    informe quanto será o valor arrecadado. </p>
+  <div class="questao9">
+    <label for="tamp">Tamanho P</label>
+    <input type="number" id="tamp"> <br><br>
+    <label for="m">Tamanho M</label>
+    <input type="number" id="m"> <br><br>
+    <label for="g">Tamanho G</label>
+    <input type="number" id="g"> <br><br>
+    <button onclick="q9()">Calcular valor arrecadado</button>
+    <h3 id="resposta-questao9"></h3>
+  </div>
+
+
+  <h1>Exercício 10</h1>
+  <p> Construa um algoritmo para calcular a distância entre dois pontos do plano cartesiano. Cada
+    ponto é um par ordenado (x,y). </p>
+  <div class="questao10">
+    <label for="pontoA">Ponto A</label>
+    <input type="number" id="pontoAX" placeholder="X">
+    <input type="number" id="pontoAY" placeholder="Y"><br><br>
+    <label for="pontoB">Ponto B</label>
+    <input type="number" id="pontoBX" placeholder="X"> <input type="number" id="pontoBY" placeholder="Y"> <br><br>
+    <button onclick="q10()">Calcular distância </button>
+    <h3 id="resposta-questao10"></h3>
+  </div>
+
+  <div class="container">
+    <a href="./index.html" class="back">Voltar</a>
+    <a href="" class="pass">Próxima página</a>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
