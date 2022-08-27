@@ -133,4 +133,147 @@ const q10 = () => {
   let valorResposta = `A distância entre o ponto A e B é igual a ${calculo}.`
   elementoResposta.innerHTML = valorResposta;
 
-} 
+}
+
+//Questao 11
+
+const q11 = () => {
+  let qtdedias = document.getElementById("qtdedias").value;
+
+  let calculoAnos = parseInt(qtdedias / 360);
+  let calculoMes = parseInt((qtdedias - (360 * calculoAnos)) / 30);
+  let calculoDias = parseInt((qtdedias - (360 * calculoAnos)) % 30);
+
+
+
+  let elementoResposta = document.getElementById("resposta-questao11");
+  let valorResposta = `A empresa está há ${calculoAnos} ano(s), ${calculoMes} mes(es) e ${calculoDias} dia(s) sem acidentes.`
+  elementoResposta.innerHTML = valorResposta;
+}
+
+//Questao 12
+const q12 = () => {
+  let salario = parseFloat(document.getElementById("salario").value).toFixed(2);
+
+  let aumento = parseFloat(salario * 1.15).toFixed(2);
+  let impostos = parseFloat(aumento * 0.08).toFixed(2)
+  let salarioFinal = parseFloat(aumento - impostos).toFixed(2)
+
+  let elementoResposta = document.getElementById("resposta-questao12");
+  let valorResposta = `O salário inicial era de R\$ ${salario}. O salário com o aumento foi para R\$ ${aumento} e com os impostos passou a ser R\$ ${salarioFinal}.`
+  elementoResposta.innerHTML = valorResposta;
+}
+
+//Questao 13
+const q13 = () => {
+  let numero = document.getElementById("numero").value;
+
+  let calculaUnidade = parseInt(numero % 10)
+  let calculaDezena = parseInt(((numero - (numero % 10)) / 10) % 10)
+  let calculaCentena = parseInt(numero / 100);
+
+  let elementoResposta = document.getElementById("resposta-questao13");
+  let valorResposta = `CENTENA: ${calculaCentena}. 
+  DEZENA: ${calculaDezena} 
+  UNIDADE: ${calculaUnidade}`
+  elementoResposta.innerHTML = valorResposta;
+}
+
+//Questao 14
+const q14 = () => {
+  let area = document.getElementById("area").value;
+
+  let calculaArea = (3.14 * (area ** 2))
+
+  let elementoResposta = document.getElementById("resposta-questao14");
+  let valorResposta = `A área da pizza é de: ${calculaArea}.`
+  elementoResposta.innerHTML = valorResposta;
+}
+
+//Questao 15
+const q15 = () => {
+  let conta = document.getElementById("conta").value;
+
+  let totalCarlos = parseInt(conta / 3).toFixed(2)
+  let totalAndre = parseInt(conta / 3).toFixed(2)
+  let resto = (conta % 3)
+  let totalFelipe = resto + (parseInt(conta / 3))
+
+  let elementoResposta = document.getElementById("resposta-questao15");
+  let valorResposta = `Carlos deverá pagar R$ ${totalCarlos}. 
+  André, ${totalAndre}  e Felipe, ${totalFelipe}`
+  elementoResposta.innerHTML = valorResposta;
+}
+
+//Questao 16
+const q16 = () => {
+  let sanduiches = document.getElementById("sanduiches").value;
+
+  let totalQueijo = (sanduiches * 100) / 1000
+  let totalPresunto = (sanduiches * 50) / 1000
+  let totalCarne = (sanduiches * 100) / 1000
+
+
+  let elementoResposta = document.getElementById("resposta-questao16");
+  let valorResposta = `Para essa quantidade de sanduíches, você vai precisar de ${totalQueijo} kg(s) de queijo, ${totalPresunto} kg(s) de presunto e ${totalCarne}kg(s) de carne`
+  elementoResposta.innerHTML = valorResposta;
+}
+
+//Questao 17
+const q17 = () => {
+  let temp = document.getElementById("temp").value;
+
+  let convertFah = temp * (9 / 5) + 32;
+
+
+
+  let elementoResposta = document.getElementById("resposta-questao17");
+  let valorResposta = `A temperatura correspondente em Fahrenheit é ${convertFah}`
+  elementoResposta.innerHTML = valorResposta;
+}
+
+//Questao 18
+const q18 = () => {
+  let normal = document.getElementById("hrNormal").value;
+  let extra = document.getElementById("hrExtra").value;
+
+  let calculaNormal = normal * 10;
+  let calculaExtra = extra * 15;
+
+  let salarioBruto = calculaNormal + calculaExtra;
+  let salarioLiquido = salarioBruto - (salarioBruto * 0.10)
+
+  let elementoResposta = document.getElementById("resposta-questao18");
+  let valorResposta = `O salário  bruto é de R$ ${salarioBruto} e o salário líquido desse funcionário é de R$ ${salarioLiquido}.`
+  elementoResposta.innerHTML = valorResposta;
+}
+
+//Questao 19
+const q19 = () => {
+  let frangos = document.getElementById("frango").value;
+
+
+  let calculaChip = frangos * 4;
+  let calculaAneis = frangos * 7;
+
+  let total = parseFloat(calculaAneis + calculaChip).toFixed(2);
+
+
+  let elementoResposta = document.getElementById("resposta-questao19");
+  let valorResposta = `O valor total que a granja vai gastar é de R$ ${total}.`
+  elementoResposta.innerHTML = valorResposta;
+}
+
+//Questao 20
+const q20 = () => {
+  let blusas = document.getElementById("blusas").value;
+  let novelos = document.getElementById("novelos").value;
+
+
+  let total = novelos / blusas;
+
+
+  let elementoResposta = document.getElementById("resposta-questao20");
+  let valorResposta = `São necessários ${total} novelos para fazer ${blusas} blusas.`
+  elementoResposta.innerHTML = valorResposta;
+}

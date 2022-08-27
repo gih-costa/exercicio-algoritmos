@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Exercícios - Algoritmos 2</title>
+</head>
+
+<body>
+  <h1>Exercício 11</h1>
+  <p> Uma fábrica controla o tempo de trabalho sem acidentes pela quantidade de dias. Faça um
+    algoritmo para converter este tempo em anos, meses e dias. Assuma que cada mês possui sempre
+    30 dias. </p>
+
+  <div class="questao11">
+    <label for="qtdedias">A fábrica está a quantos dias sem acidentes?</label><br>
+    <input type="number" id="qtdedias"> <br><br>
+
+    <button onclick="q11()">Converter</button>
+    <h3 id="resposta-questao11"></h3>
+  </div>
+
+  <h1>Exercício 12</h1>
+  <p>Faça um algoritmo para ler o salário de um funcionário e aumentá-Io em 15%. Após o aumento,
+    desconte 8% de impostos. Imprima o salário inicial, o salário com o aumento e o salário final.
+  </p>
+
+  <div class="questao12">
+    <label for="salario">Digite o salário do funcionário</label>
+    <input type="number" id="salario"> <br><br>
+
+    <button onclick="q12()">Calcular</button>
+    <h3 id="resposta-questao12"></h3>
+  </div>
+
+  <h1>Exercício 13</h1>
+  <p> Ler um número inteiro (assuma até três dígitos) e imprimir a saída da seguinte forma </p>
+  <div class="questao13">
+    <label for="numero">Digita um número de até 3 dígitos</label>
+    <input type="number" id="numero"> <br><br>
+
+    <button onclick="q13()">Calcular média</button>
+    <h3 id="resposta-questao13"></h3>
+  </div>
+
+  <h1>Exercício 14</h1>
+  <p> Calcule a área de uma pizza que possui um raio R (pi=3.14). </p>
+  <div class="questao14">
+    <label for="area">Digite o valor de R</label>
+    <input type="number" id="area"> <br><br>
+
+    <button onclick="q14()">Calcular área</button>
+    <h3 id="resposta-questao14"></h3>
+  </div>
+
+
+  <h1>Exercício 15</h1>
+  <p> Três amigos, Carlos, André e Felipe. decidiram rachar igualmente a conta de um bar. Faça um
+    algoritmo para ler o valor total da conta e imprimir quanto cada um deve pagar, mas faça com que
+    Carlos e André não paguem centavos. Ex: uma conta de R$101,53 resulta em R$33,00 para
+    Carlos, R$33,00 para André e R$35,53 para Felipe. </p>
+  <div class="questao15">
+    <label for="conta">Qual o valor total da conta?</label>
+    <input type="number" id="conta">
+
+    <button onclick="q15()">Calcular</button>
+    <h3 id="resposta-questao15"></h3>
+  </div>
+
+
+
+  <div class="container">
+    <a href="./index.html" class="back">Início</a>
+    <a href="./pagina2.html" class="back">Anterior</a>
+    <a href="./pagina4.html" class="pass">Próxima página</a>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

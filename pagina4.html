@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Exercícios - Algoritmos 2</title>
+</head>
+
+<body>
+  <h1>Exercício 16</h1>
+  <p> A lanchonete Gostosura vende apenas um tipo de sanduíche, cujo recheio inclui duas fatias de
+    queijo, uma fatia de presunto e uma rodela de hambúrguer. Sabendo que cada fatia de queijo ou
+    presunto pesa 50 gramas, e que a rodela de hambúrguer pesa 100 gramas, faça um algoritmo em
+    que o dono forneça a quantidade de sanduíches a fazer, e a máquina informe as quantidades (em
+    quilos) de queijo, presunto e carne necessários para compra. </p>
+
+  <div class="questao16">
+    <label for="sanduiches">Informe a quantidade de sanduíches</label><br>
+    <input type="number" id="sanduiches"> <br><br>
+
+    <button onclick="q16()">Calcular</button>
+    <h3 id="resposta-questao16"></h3>
+  </div>
+
+  <h1>Exercício 17</h1>
+  <p> Alguns países medem temperaturas em graus Celsius, e outros em graus Fahrenheit. Faça um
+    algoritmo para ler uma temperatura Celsius e imprimi-Ia em Fahrenheit (pesquise como fazer este
+    tipo de conversão).
+  </p>
+
+  <div class="questao17">
+    <label for="temp">Digite a temperatura em Celsius</label>
+    <input type="number" id="temp"> <br><br>
+
+    <button onclick="q17()">Calcular</button>
+    <h3 id="resposta-questao17"></h3>
+  </div>
+
+  <h1>Exercício 18</h1>
+  <p> A empresa Hipotheticus paga R$10,00 por hora normal trabalhada, e R$15,00 por hora extra.
+    Faça um algoritmo para calcular e imprimir o salário bruto e o salário líquido de um determinado
+    funcionário. Considere que o salário líquido é igual ao salário bruto descontando-se 10% de
+    impostos. </p>
+  <div class="questao18">
+    <label for="hrNormal">Digita a quantidade de horas normais trabalhadas</label>
+    <input type="number" id="hrNormal"> <br><br>
+
+    <label for="hrExtra">Digita a quantidade de horas extras trabalhadas</label>
+    <input type="number" id="hrExtra"> <br><br>
+
+    <button onclick="q18()">Calcular salário</button>
+    <h3 id="resposta-questao18"></h3>
+  </div>
+
+  <h1>Exercício 19</h1>
+  <p> A granja Frangotech possui um controle automatizado de cada frango da sua produção. No pé
+    direito do frango há um anel com um chip de identificação; no pé esquerdo são dois anéis para
+    indicar o tipo de alimento que ele deve consumir. Sabendo que o anel com chip custa R$4,00 e o
+    anel de alimento custa R$3,50, faça um algoritmo para calcular o gasto total da granja para marcar
+    todos os seus frangos. </p>
+  <div class="questao19">
+    <label for="frango">Informe a quantidade de frangos</label>
+    <input type="number" id="frango"> <br><br>
+
+    <button onclick="q19()">Calcular</button>
+    <h3 id="resposta-questao19"></h3>
+  </div>
+
+
+  <h1>Exercício 20</h1>
+  <p> Uma confecção produz X blusas de lã e para isto gasta uma certa quantidade de novelos. Faça
+    um algoritmo para calcular quantos novelos de lã ela gasta por blusa. </p>
+  <div class="questao20">
+    <label for="blusas">Informe a quantidade de blusas produzidas</label>
+    <input type="number" id="blusas"> <br></br>
+    <label for="novelos">Informe a quantidade de novelos utilizados</label>
+    <input type="number" id="novelos"> <br></br>
+    <button onclick="q20()">Calcular</button>
+    <h3 id="resposta-questao20"></h3>
+  </div>
+
+
+  <div class="container">
+    <a href="./index.html" class="back">Início</a>
+    <a href="./pagina3.html" class="back">Anterior</a>
+    <a href="" class="pass">Próxima página</a>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
